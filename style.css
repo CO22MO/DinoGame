@@ -1,0 +1,362 @@
+body
+{
+    background-image: url(./ImageLibrary/GrassBlock.jpg); background-size: cover;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.HomeScreen
+{
+    background-image: url(./ImageLibrary/MinecraftTitleScreen.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+}
+
+#StartButton 
+{
+    width: 479px;
+    height: 50px;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    left: 35vw;
+    top: 260px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Minecraftia';
+    color: whitesmoke;
+}
+  
+#StartButton button 
+{
+    width: 100%;
+    height: 100%;
+    background-color: initial;
+    border: none;
+    display: flex;
+}
+
+#StartButton button:focus 
+{
+    outline: none;
+}
+
+#ShopButton
+{
+    width: 479px;
+    height: 50px;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    left: 35vw;
+    top: 323px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Minecraftia';
+    color: whitesmoke;
+}
+
+.Shop
+{
+    width: 80vw;
+    height: 80vh;
+    border: 3px solid black;
+    background-color: green;
+    position: absolute;
+    align-self: center;
+    left: 150px;
+}
+
+.NavBar
+{
+    width: 99.6%;
+    height: 5vh;
+    border: 3px solid red;
+    position: absolute;
+}
+
+#Return
+{
+    width: 300px;
+    height: 37px;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Minecraftia';
+    color: whitesmoke;
+}
+
+#Money
+{
+    width: 296px;
+    height: 33px;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Minecraftia';
+    color: whitesmoke;
+    left: 300px;
+    border: 2px solid black;
+}
+
+.Items
+{
+    position: absolute;
+    border: 3px solid purple;
+    height: 90%;
+    width: 90%;
+    top: 6vh;
+    left: 3vw;
+}
+
+.Item1
+{
+    box-sizing: border-box;
+    height: 76px;
+    width: 76px;
+    margin: 5px;
+    border: 1px solid rgb(219, 12, 12);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 20px;
+    font-family: Arial;
+    color: black;
+    vertical-align: top;
+    background-image: url(./ImageLibrary/TotemOfUndying.jfif); background-size: contain; background-repeat: no-repeat;
+}
+
+#Options
+{
+    position: absolute;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    border: 3px solid black;
+    display: flex;
+}
+
+#Quit
+{
+    position: absolute;
+    background-image: url(./ImageLibrary/MenuButton.webp);
+    border: 3px solid black;
+    display: flex;
+}
+
+.ScoreBoard
+{
+    height: 90vh;
+    width: 7vw;
+    border: 3px solid purple;
+    margin-top: 20px;
+    margin-left: 1400px;
+    position: absolute;
+    background-image: url(./ImageLibrary/Green.png);
+}
+
+.Image 
+{
+    flex: 1;
+}
+  
+.TextBox 
+{
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.Info
+{
+    margin-top: 20px;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.GameBoard
+{
+    border: 3px solid green;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    background-image: url(./ImageLibrary/MinecrfatBackground.PNG);
+    background-size: cover;
+}
+
+#YouDied
+{
+    position: absolute;
+    left: 39vw;
+    top: 150px;
+    height: 200px;
+    width: 400px;
+    font-family: 'Minecraftia';
+    font-size: 50px;
+    display: none;
+}
+
+#DeathScreenScore
+{
+    position: absolute;
+    left: 42.5vw;
+    top: 210px;
+    height: 500px;
+    width: 100px;
+    display: none;
+}
+
+#Respawn
+{
+    border: 3px solid black;
+    background-image: url(./ImageLibrary/ReSpawn.webp);
+    background-size: contain;
+    position: absolute;
+    width: 700px;
+    height: 72.7px;
+    left: 23vw;
+    top: 250px;
+    display: none;
+}
+
+#TitleScreen
+{
+    border: 3px solid black;
+    background-image: url(./ImageLibrary/TitleScreen.webp);
+    background-size: contain;
+    position: absolute;
+    width: 700px;
+    height: 70px;
+    left: 23vw;
+    top: 330px;
+    display: none;
+}
+
+#Player
+{
+    height: 130px;
+    width: 40px;
+    position: absolute;
+    top: 71.5vh;
+    left: 20vw;
+    z-index: 100;
+    background-image: url(./ImageLibrary/SteeveStanding.png); background-size:contain; background-repeat: no-repeat;
+}
+
+#DeathNote
+{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 85vh;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.Walking
+{
+    animation: Walk 1s normal infinite;
+}
+
+.Jump
+{
+    animation: Jump 500ms linear;
+}
+
+.DoubleJump
+{
+    animation: DoubleJump 500ms linear;
+}
+
+#Obstacle
+{
+    animation: Obstacle 2s linear infinite;
+}
+
+.Obstacle1
+{
+    height: 130px;
+    width: 60px;
+    position: relative;
+    top: 71.5vh;
+    left: 89vw;
+    z-index: 50;
+    background-image: url(./ImageLibrary/ZombieObstacle.webp); background-size:cover; background-repeat: no-repeat;
+}
+
+.Obstacle2
+{
+    height: 60px;
+    width: 115px;
+    position: relative;
+    top: 80.5vh;
+    left: 89vw;
+    z-index: 50;
+    background-image: url(./ImageLibrary/SpiderObstacle.webp); background-size:cover; background-repeat: no-repeat;
+}
+
+.Obstacle3
+{
+    height: 60px;
+    width: 90px;
+    position: relative;
+    top: 67vh;
+    left: 89vw;
+    z-index: 50;
+    background-image: url(./ImageLibrary/PhantomObstacle.webp); background-size:cover; background-repeat: no-repeat;
+}
+
+@keyframes Walk
+{
+    0%{background-image: url(./ImageLibrary/SteeveStanding.png); background-size:contain; background-repeat: no-repeat;}
+    25%{background-image: url(./ImageLibrary/SteeveWalk1.png); background-size: cover;}
+    50%{background-image: url(./ImageLibrary/SteeveStanding.png); background-size:contain; background-repeat: no-repeat;}
+    75%{background-image: url(./ImageLibrary/SteeveWalk3.png); background-size: cover;}
+    100%{background-image: url(./ImageLibrary/SteeveStanding.png); background-size:contain; background-repeat: no-repeat;}
+}
+
+@keyframes Obstacle
+{
+    0%{left: 85vw}
+    100%{left: 0px}
+}
+
+@keyframes Jump
+{
+    0% {top: 71.5vh}
+    43% {top: 31.5vh}
+    57% {top: 31.5vh}
+    100% {top: 71.5vh}
+}
+
+@keyframes DoubleJump
+{
+    0% {top: 40vh}
+    17% {top: 30vh}
+    33% {top: 25vh}
+    50% {top: 30vh}
+    67% {top: 40vh}
+    83%{top: 55vh}
+    100%{top: 71.5vh}
+}

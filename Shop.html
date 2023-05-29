@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body onload="Balance()">
+    <audio id="Music" autoplay loop muted>
+        <source src="./MusicLibrary/Minecraft_Sweden.mp3" type="audio/mpeg">
+      </audio>
+
+    <div class="HomeScreen">
+
+        <div class="Shop">
+            <div class="NavBar">
+                <div>
+                    <button id="Return" onclick="window.location.href='./index.html'">Exit Shop</button>
+                </div>
+                <div id="Money">
+                    <a id="Coins">Money = 0</a>
+                </div>
+            </div>
+
+            <div class="Items">
+                    <input type="button" class="Item1" id="10" onclick="Purchase(this.id)">
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

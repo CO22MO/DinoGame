@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body onload = "checkCollision(); Obstacles(); ScoreCount()">
+    <audio id="Music" autoplay loop muted>
+        <source src="./MusicLibrary/Minecraft_Sweden.mp3" type="audio/mpeg">
+      </audio>
+    
+    <div class="GameBoard">
+
+        <div id="YouDied">
+            <p>You Died!</p>
+        </div>
+
+        <div>
+            <h2 id="DeathScreenScore"></h2>
+        </div>
+
+        <div>
+            <button id="Respawn" onclick="Respawn()"></button>
+        </div>
+        <div>
+            <button id="TitleScreen" onclick="window.location.href='./index.html'"></button>
+        </div>
+
+        <div id="Player" class="Walking"></div>
+        <div id="Obstacle"></div>
+
+        <div id="DeathNote"></div>
+
+    </div>
+
+    <div class="ScoreBoard">
+
+        <div class="Info">
+
+            <div class="Image">
+                <img src="./ImageLibrary/JumpSymbol.webp" height="50px"; width="50px";>
+            </div>
+            
+            <div class="TextBox">
+                <h2 id="Countdown"></h2>
+            </div>
+            
+        </div>
+
+        <div class="Info">
+
+            <div class="Image">
+                <img src="./ImageLibrary/DiamondSymbol.webp" height="50px"; width="50px";>
+            </div>
+
+            <div class="TextBox">
+                <h2 id="CurrentScore"></h2>
+            </div>
+
+        </div>
+
+        <div class="Info">
+
+            <div class="Image">
+                <img src="./ImageLibrary/EmeraldSymbol.webp " height="50px"; width="50px";>
+            </div>
+
+            <div class="TextBox">
+                <h2 id="HighScore"></h2>
+            </div>
+
+        </div>
+
+        <div class="Info">
+
+            <div class="Image">
+                <img src="./ImageLibrary/TotemOfUndying.jfif" height="50px"; width="50px";>
+            </div>
+
+            <div class="TextBox">
+                <h2 id="Totems"></h2>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
